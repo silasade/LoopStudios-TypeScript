@@ -1,38 +1,340 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Alata');
+@import url('https://fonts.google.com/specimen/Josefin+Sans');
+*{
+  margin: 0;
+  
+}
+body{
+  color: hsl(0, 0%, 41%);
+}
+.logo{
+  width: 70%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu{
+  width: 50%;
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.first{
+  display: flex;
+  flex-direction: row;
+  flex: 50%;
+  align-items: center;
+  padding: 50px;
+}
+.interactive{
+  width: 100%;
+  height: 70vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./Components/images/desktop/image-interactive.jpg");
+}
+.first-text{
+  background-color: white;
+  width: 60vw;
+  height: 40vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 25px;
+  transform: translateX(-40%);
+  margin-top:125px;
+  padding: 30px;
+}
+.first-text h2{
+  font-family: Alata;
+  font-weight: 400;
+  font-size: 40px;
+}
+.first-text h5{
+  font-family: Josefin Sans;
+  font-weight: 300;
+  animation-name: animate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.top{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.second h2{
+  font-family: Alata;
+  font-weight: 400;
+  font-size: 40px;
+}
+.Navbar1{
+  display: flex;
+  background-image: url("./Components/images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex-direction: column;
+  gap: 200px;
+  padding: 50px;
+}
+.Navbar1 h1{
+  color: white;
+  text-align: left;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  font-size: 50px;
+  font-family: Alata;
+  font-weight: 400;
+  padding: 20px;
+}
+.title{
+  width: 40%;
+  word-wrap: break-word;
+  animation-name: animate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+a{
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  
+  
+}
+a{
+  transition: border;
+  transition-duration: 5s;
+  transition-timing-function: ease-in;
+  transition-delay: 1ms;
+}
+a:hover{ 
+  border: 1px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  padding: 2px;
+}
+.second{
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px 0 50px;
+}
+.creations{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 30px;
+  flex-flow: wrap;
+  column-gap: 10px;
+  padding: 50px;
+  padding-left: 50px;
+  color: white;
+}
+button{
+  font-family: Alata;
+  font-weight: 400;
+  width: 15%;
+  font-size: 15px;
+  background-color: transparent;
+  border-color: hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: space-between;
+}
+.image-links{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.link{
+  display: flex;
+justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.one{
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  flex: 1 1 20%;
+  background-size: contain;
+    height: 420px;
+    display: flex;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-image: url("./Components/images/desktop/image-deep-earth.jpg");
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  gap: 30px;
+}
+footer{
+  background-color: black;
+  padding: 30px;
+  align-items: end;
+}
+.social-media{
+  display: grid;
+  grid-template-columns: repeat(4,0.5fr);
+ 
+}
+.two{
+  padding: 10px;
+  justify-content: center;
+  flex: 1 1 20%;
+  background-size: contain;
+  height: 420px;
+  display: flex;
+  align-items: end;
+  background-repeat: no-repeat;
+  background-image: url("./Components/images/desktop/image-night-arcade.jpg");
+}
+.three{
+  padding: 10px;
+  justify-content: center;
+  flex: 1 1 20%;
+  background-size: contain;
+    height: 420px;
+  display: flex;
+  align-items: end;
+  background-repeat: no-repeat;
+  background-image: url("./Components/images/desktop/image-soccer-team.jpg");
+}
+.four{
+  padding: 10px;
+  justify-content: center;
+  flex: 1 1 20%;
+  background-size: contain;
+    height: 420px;
+  display: flex;
+  align-items: end;
+  background-repeat: no-repeat;
+  background-image: url("./Components/images/desktop/image-grid.jpg");
+}
+.five{
+  
+  padding: 10px;
+  justify-content: center;
+  flex: 1 1 20%;
+  background-size: contain;
+  height: 420px;
+  display: flex;
+  align-items: end;
+  background-repeat: no-repeat;
+  background-image: url("./Components/images/desktop/image-from-above.jpg");
+}
+.six{
+  padding: 10px;
+  justify-content: center;
+  flex: 1 1 20%;
+  background-size: contain;
+    height: 420px;
+  display: flex;
+  align-items: end;
+  background-repeat: no-repeat;
+  background-image: url("./Components/images/desktop/image-pocket-borealis.jpg");
+}
+.seven{
+  padding: 10px;
+  justify-content: center;
+
+  flex: 1 1 20%;
+  background-size: contain;
+    height: 420px;
+  display: flex;
+  align-items: end;
+  background-repeat: no-repeat;
+  background-image: url("./Components/images/desktop/image-curiosity.jpg");
+}
+.eight{
+  padding: 10px;
+  justify-content: center;
+  flex: 1 1 20%;
+  background-size: contain;
+  height: 420px;
+  align-content: end;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url("./Components/images/desktop/image-fisheye.jpg");
+}
+@keyframes slider{
+  from{transform: translateX(-500px);}
+  to{transform: translateX(0px);}
+}
+@keyframes animate {
+  0%{transform: translateX(-500px);opacity: 0;}
+  20%{opacity: 0.3;}
+  50%{opacity: 0.5;}
+  70%{opacity: 0.7;}
+  100%{transform: translateX(0px);opacity: 1;}
+}
+@media(max-width:1200px){
+  .Navbar1 h1{
+    font-size: 40px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media(max-width:1050px){
+  .Navbar1 h1{
+    font-size: 35px;
   }
+}
+@media(max-width:700px){
+  .Navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu{
+    justify-self: flex-end;
+  }
+  
+  .Navbar1{
+    background-image: url("./Components/images/image-hero.jpg");
+    background-size: 100%;
+  }
+  .nav{
+    background-color: black;
+    height: 80vh;
+    gap: 130px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    animation-name: slider;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transition: transform 0.5s ease-in-out;
+
+  }
+  .close{
+    cursor: pointer;
+  }
+  .images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  .links{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    font-size: 25px;
+    
+  }
+  
 }
